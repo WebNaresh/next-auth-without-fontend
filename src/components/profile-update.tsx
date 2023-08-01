@@ -25,7 +25,6 @@ const ProfileUpdate: React.FC<ProfileUpdateProps> = ({ update }) => {
       <Form action={handleUpdateProfile}>
         <input type="text" name="name" placeholder="Name" required />
         <input type="text" name="image" placeholder="Image" required />
-        "https://images.pexels.com/photos/15131949/pexels-photo-15131949/free-photo-of-man-standing-in-front-of-an-arch-in-a-fortress.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
         <Button>Update Profile</Button>
       </Form>
     </div>
