@@ -8,6 +8,8 @@ interface ProfileServerPageProps {}
 
 const ProfileServerPage: React.FC<ProfileServerPageProps> = async ({}) => {
   const session = await getServerSession(authOptions);
+  console.log(`🚀 ~ session:`, session);
+
   return (
     <div>
       Profile Server Page

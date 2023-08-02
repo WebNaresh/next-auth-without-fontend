@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import Form from "./form";
 
 interface ProfileUpdateProps {
-  update: any;
+  update?: any;
+  user?: any;
 }
 
 const ProfileUpdate: React.FC<ProfileUpdateProps> = ({ update }) => {
@@ -17,7 +18,6 @@ const ProfileUpdate: React.FC<ProfileUpdateProps> = ({ update }) => {
 
     const res = await updateUser({ name, image });
     alert(res.msg);
-    console.log(`🚀 ~ res:`, res);
   }
   return (
     <div className="">

@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { signIn } from "next-auth/react";
+import Link from "next/link";
 import { FC } from "react";
 
 interface SignInProps {
@@ -15,6 +16,9 @@ const SignIn: FC<SignInProps> = ({ callbackUrl }) => {
         <Button onClick={() => signIn("github", { callbackUrl })}>
           Continue with github
         </Button>
+      </div>
+      <div>
+        <Link href={"/signup"}>SignUp</Link>
       </div>
     </div>
   );
