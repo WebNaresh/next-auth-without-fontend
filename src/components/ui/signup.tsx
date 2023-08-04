@@ -2,6 +2,7 @@
 import { signUpWithCredentials } from "@/actions/auth-action";
 import Form from "@/components/form";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface SignUpProps {}
 
@@ -30,6 +31,9 @@ const SignUp: React.FC<SignUpProps> = () => {
         />
         <Button>Register</Button>
       </Form>
+      <div>
+        <Link href={"/signin"}>Sign In</Link>
+      </div>
     </div>
   );
 };

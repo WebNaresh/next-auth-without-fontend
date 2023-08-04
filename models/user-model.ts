@@ -16,7 +16,7 @@ const userSchema = new Schema(
     },
     provider: {
       type: String,
-      required: "credentials",
+      default: "credentials",
     },
     password: String,
     image: String,
